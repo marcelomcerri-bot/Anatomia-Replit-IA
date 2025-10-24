@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { SiteHeader } from "@/components/site-header"
 import {
   Brain,
@@ -23,9 +24,11 @@ import {
   ScaleIcon as Skeleton,
   Shield,
   Utensils,
+  Stethoscope,
+  Hand,
 } from "lucide-react"
 
-const topicsBySystem = [
+const topicsBySystemTeorica = [
   {
     system: "Fundamentos",
     topics: [
@@ -232,6 +235,21 @@ const topicsBySystem = [
   },
 ]
 
+const topicsBySystemPratica = [
+  {
+    system: "Membro Superior",
+    topics: [
+      {
+        id: "musculos-membro-superior",
+        title: "Músculos do Membro Superior",
+        description: "Tórax, ombro, braço, antebraço e mão - anatomia muscular completa",
+        icon: Dumbbell,
+        available: true,
+      },
+    ],
+  },
+]
+
 export default function TopicsPage() {
   return (
     <div className="min-h-screen">
@@ -245,64 +263,138 @@ export default function TopicsPage() {
           </p>
         </div>
 
-        <div className="space-y-12">
-          {topicsBySystem.map((systemGroup, systemIndex) => (
-            <div key={systemGroup.system} className="space-y-6">
-              <div className="relative pb-3">
-                <h2 className="text-2xl font-bold text-foreground mb-2">{systemGroup.system}</h2>
-                <div className="absolute bottom-0 left-0 w-24 h-1 bg-gradient-to-r from-accent to-accent/30 rounded-full" />
-              </div>
+        <Tabs defaultValue="teorica" className="w-full">
+          <div className="flex justify-center mb-8">
+            <TabsList className="grid w-full max-w-md grid-cols-2">
+              <TabsTrigger value="teorica" className="text-base">
+                <BookOpen className="h-4 w-4 mr-2" />
+                Anatomia Teórica
+              </TabsTrigger>
+              <TabsTrigger value="pratica" className="text-base">
+                <Stethoscope className="h-4 w-4 mr-2" />
+                Anatomia Prática
+              </TabsTrigger>
+            </TabsList>
+          </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {systemGroup.topics.map((topic, topicIndex) => {
-                  const Icon = topic.icon
-                  return (
-                    <Card
-                      key={topic.id}
-                      className={`h-full transition-all duration-300 ${
-                        topic.available
-                          ? "hover:shadow-xl hover:border-accent/50 hover:-translate-y-1 cursor-pointer group animate-float bg-card border-l-4 border-l-accent"
-                          : "opacity-60 cursor-not-allowed bg-card/60 border-l-4 border-l-muted"
-                      }`}
-                      style={{
-                        animationDelay: `${(systemIndex * 3 + topicIndex) * 0.1}s`,
-                      }}
-                    >
-                      {topic.available ? (
-                        <Link href={`/topico/${topic.id}`} className="block h-full">
-                          <CardHeader className="pb-4">
-                            <CardTitle className="text-xl font-bold leading-tight mb-2">{topic.title}</CardTitle>
-                            <CardDescription className="leading-relaxed text-sm">{topic.description}</CardDescription>
-                          </CardHeader>
-                          <CardContent>
-                            <Button
-                              variant="ghost"
-                              className="w-full group-hover:bg-accent/10 group-hover:text-accent transition-all"
-                            >
-                              Estudar Tópico →
-                            </Button>
-                          </CardContent>
-                        </Link>
-                      ) : (
-                        <>
-                          <CardHeader className="pb-4">
-                            <CardTitle className="text-xl font-bold leading-tight mb-2">{topic.title}</CardTitle>
-                            <CardDescription className="leading-relaxed text-sm">{topic.description}</CardDescription>
-                          </CardHeader>
-                          <CardContent>
-                            <Button variant="ghost" className="w-full" disabled>
-                              Em breve
-                            </Button>
-                          </CardContent>
-                        </>
-                      )}
-                    </Card>
-                  )
-                })}
+          <TabsContent value="teorica" className="space-y-12">
+            {topicsBySystemTeorica.map((systemGroup, systemIndex) => (
+              <div key={systemGroup.system} className="space-y-6">
+                <div className="relative pb-3">
+                  <h2 className="text-2xl font-bold text-foreground mb-2">{systemGroup.system}</h2>
+                  <div className="absolute bottom-0 left-0 w-24 h-1 bg-gradient-to-r from-accent to-accent/30 rounded-full" />
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {systemGroup.topics.map((topic, topicIndex) => {
+                    const Icon = topic.icon
+                    return (
+                      <Card
+                        key={topic.id}
+                        className={`h-full transition-all duration-300 ${
+                          topic.available
+                            ? "hover:shadow-xl hover:border-accent/50 hover:-translate-y-1 cursor-pointer group animate-float bg-card border-l-4 border-l-accent"
+                            : "opacity-60 cursor-not-allowed bg-card/60 border-l-4 border-l-muted"
+                        }`}
+                        style={{
+                          animationDelay: `${(systemIndex * 3 + topicIndex) * 0.1}s`,
+                        }}
+                      >
+                        {topic.available ? (
+                          <Link href={`/topico/${topic.id}`} className="block h-full">
+                            <CardHeader className="pb-4">
+                              <CardTitle className="text-xl font-bold leading-tight mb-2">{topic.title}</CardTitle>
+                              <CardDescription className="leading-relaxed text-sm">{topic.description}</CardDescription>
+                            </CardHeader>
+                            <CardContent>
+                              <Button
+                                variant="ghost"
+                                className="w-full group-hover:bg-accent/10 group-hover:text-accent transition-all"
+                              >
+                                Estudar Tópico →
+                              </Button>
+                            </CardContent>
+                          </Link>
+                        ) : (
+                          <>
+                            <CardHeader className="pb-4">
+                              <CardTitle className="text-xl font-bold leading-tight mb-2">{topic.title}</CardTitle>
+                              <CardDescription className="leading-relaxed text-sm">{topic.description}</CardDescription>
+                            </CardHeader>
+                            <CardContent>
+                              <Button variant="ghost" className="w-full" disabled>
+                                Em breve
+                              </Button>
+                            </CardContent>
+                          </>
+                        )}
+                      </Card>
+                    )
+                  })}
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </TabsContent>
+
+          <TabsContent value="pratica" className="space-y-12">
+            {topicsBySystemPratica.map((systemGroup, systemIndex) => (
+              <div key={systemGroup.system} className="space-y-6">
+                <div className="relative pb-3">
+                  <h2 className="text-2xl font-bold text-foreground mb-2">{systemGroup.system}</h2>
+                  <div className="absolute bottom-0 left-0 w-24 h-1 bg-gradient-to-r from-accent to-accent/30 rounded-full" />
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {systemGroup.topics.map((topic, topicIndex) => {
+                    const Icon = topic.icon
+                    return (
+                      <Card
+                        key={topic.id}
+                        className={`h-full transition-all duration-300 ${
+                          topic.available
+                            ? "hover:shadow-xl hover:border-accent/50 hover:-translate-y-1 cursor-pointer group animate-float bg-card border-l-4 border-l-accent"
+                            : "opacity-60 cursor-not-allowed bg-card/60 border-l-4 border-l-muted"
+                        }`}
+                        style={{
+                          animationDelay: `${(systemIndex * 3 + topicIndex) * 0.1}s`,
+                        }}
+                      >
+                        {topic.available ? (
+                          <Link href={`/pratica/${topic.id}`} className="block h-full">
+                            <CardHeader className="pb-4">
+                              <CardTitle className="text-xl font-bold leading-tight mb-2">{topic.title}</CardTitle>
+                              <CardDescription className="leading-relaxed text-sm">{topic.description}</CardDescription>
+                            </CardHeader>
+                            <CardContent>
+                              <Button
+                                variant="ghost"
+                                className="w-full group-hover:bg-accent/10 group-hover:text-accent transition-all"
+                              >
+                                Estudar Tópico →
+                              </Button>
+                            </CardContent>
+                          </Link>
+                        ) : (
+                          <>
+                            <CardHeader className="pb-4">
+                              <CardTitle className="text-xl font-bold leading-tight mb-2">{topic.title}</CardTitle>
+                              <CardDescription className="leading-relaxed text-sm">{topic.description}</CardDescription>
+                            </CardHeader>
+                            <CardContent>
+                              <Button variant="ghost" className="w-full" disabled>
+                                Em breve
+                              </Button>
+                            </CardContent>
+                          </>
+                        )}
+                      </Card>
+                    )
+                  })}
+                </div>
+              </div>
+            ))}
+          </TabsContent>
+        </Tabs>
       </div>
     </div>
   )
