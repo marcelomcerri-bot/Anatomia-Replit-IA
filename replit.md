@@ -7,6 +7,12 @@ AnatomiaViva is a Next.js 15 educational platform for anatomy designed for nursi
 Successfully migrated from Vercel to Replit on October 24, 2025.
 
 ## Recent Changes
+- **2025-10-24**: Implemented tab-based navigation and practical anatomy content
+  - Added tab-based navigation separating "Anatomia Teórica" and "Anatomia Prática"
+  - Created comprehensive upper limb muscle content based on NCBI scientific sources
+  - Added detailed anatomy for: pectoralis major/minor, deltoid, rotator cuff (SITS), biceps, triceps, forearm compartments, and hand intrinsic muscles
+  - Documented 10+ NCBI scientific references (StatPearls) in references page
+  - All content includes origins, insertions, innervation, functions, and clinical relevance
 - **2025-10-24**: Migrated project from Vercel to Replit
   - Updated Next.js dev and start scripts to bind to 0.0.0.0:5000 for Replit environment
   - Configured workflow to run development server on port 5000
@@ -36,14 +42,27 @@ Successfully migrated from Vercel to Replit on October 24, 2025.
 ## Project Architecture
 - **app/**: Next.js App Router structure
   - `/`: Home page
-  - `/topicos`: Topics listing page
-  - `/topico/[id]`: Dynamic topic detail pages
+  - `/topicos`: Topics listing page with tab navigation (Teórica/Prática)
+  - `/topico/[id]`: Dynamic topic detail pages (theoretical anatomy)
+  - `/pratica/[id]`: Dynamic practical anatomy pages (muscle content)
   - `/glossario`: Glossary page
-  - `/referencias`: References page
+  - `/referencias`: References page with NCBI scientific citations
 - **components/**: Reusable React components
+  - `ui/tabs.tsx`: Radix UI tab component for navigation
+  - `formatted-text.tsx`: Renders formatted text with markdown-like styling
 - **lib/**: Utility functions and shared code
+  - `topics/`: Theoretical anatomy content organized by body system
+  - `pratica-topics/`: Practical anatomy content (muscles, detailed anatomy)
+  - `pratica-topics-data.ts`: Data structure for practical anatomy content
 - **public/**: Static assets
 - **styles/**: Global styles and CSS
+
+## Content Organization
+- **Anatomia Teórica**: Systemic anatomy organized by body systems (nervous, cardiovascular, respiratory, etc.)
+- **Anatomia Prática**: Detailed muscle anatomy with scientific references from NCBI
+  - Currently includes: Upper Limb Muscles (chest, shoulder, arm, forearm, hand)
+  - All content based exclusively on NCBI StatPearls and peer-reviewed sources
+  - Each muscle includes: anatomy, origin, insertion, innervation, function, vascularization, clinical relevance
 
 ## Security & Best Practices
 - Client/server separation maintained through Next.js App Router
