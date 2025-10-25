@@ -48,9 +48,9 @@ export const retroperitonioSistemaUrinario: PraticaTopicContent = {
           {
             title: "Relações Anatômicas Específicas",
             content: [
-              "**Relações do Rim Direito:** Relaciona-se posteriormente com cólon ascendente, medialmente com segunda porção do duodeno, e anteriormente com fígado, separado da superfície hepática pelo recesso hepatorrenal (espaço de Morrison). O polo superior direito e glândula suprarrenal relacionam-se com recesso pleural, embora não diretamente com pulmão.",
-              "**Relações do Rim Esquerdo:** Situa-se posteriormente ao cólon descendente, cauda do pâncreas (que pode estender-se suficientemente para cobrir o hilo renal), grande curvatura do estômago (que pode recobrir superfície renal superomedial), e baço, ao qual se conecta via ligamento esplenorrenal.",
-              "**Relações Posteriores Comuns:** O cólon posiciona-se anteriormente a ambos os rins. Posteriormente, ambos relacionam-se com musculatura da parede abdominal posterior (psoas maior medialmente, quadrado lombar lateralmente).",
+              "**Relações do Rim Direito:** Anteriormente, rim direito relaciona-se com fígado (separado da superfície hepática pelo recesso hepatorrenal ou espaço de Morrison), segunda porção do duodeno medialmente, e cólon ascendente. Posteriormente, relaciona-se com diafragma (terço superior), 12ª costela, e musculatura da parede abdominal posterior (psoas maior medialmente, quadrado lombar lateralmente). Polo superior direito e glândula suprarrenal relacionam-se com recesso pleural, embora não diretamente com pulmão.",
+              "**Relações do Rim Esquerdo:** Anteriormente, rim esquerdo relaciona-se com estômago (grande curvatura pode recobrir superfície renal superomedial), baço (conectado via ligamento esplenorrenal), cauda do pâncreas (que pode estender-se suficientemente para cobrir o hilo renal), e cólon descendente. Posteriormente, relaciona-se com diafragma (terço superior), 11ª e 12ª costelas, e musculatura da parede abdominal posterior (psoas maior medialmente, quadrado lombar lateralmente).",
+              "**Relações Posteriores Comuns:** Ambos os rins repousam posteriormente sobre diafragma (terço superior), costelas inferiores (11ª e/ou 12ª), músculo psoas maior medialmente e músculo quadrado lombar lateralmente. Cólon (ascendente à direita, descendente à esquerda) posiciona-se anteriormente aos respectivos rins.",
             ],
           },
           {

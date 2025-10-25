@@ -274,6 +274,56 @@ const scientificArticles = [
     description:
       "Descrição anatômica da faringe dividida em nasofaringe, orofaringe e laringofaringe. Inclui os músculos constritores (superior, médio e inferior) e elevadores da faringe, vascularização pela artéria faríngea ascendente, e inervação pelo plexo faríngeo (nervos glossofaríngeo e vago).",
   },
+  {
+    title: "Anatomy, Abdomen and Pelvis: Kidneys",
+    authors: "Garza FA, Leslie SW.",
+    journal: "StatPearls [Internet]",
+    publisher: "National Library of Medicine (NCBI) - NBK482385",
+    year: "2025",
+    url: "https://www.ncbi.nlm.nih.gov/books/NBK482385/",
+    description:
+      "Revisão anatômica completa dos rins como órgãos retroperitoneais pares posicionados entre T12-L3. Detalha morfologia externa (dimensões 10-12 cm, peso 135-162 g), estrutura interna (córtex, medula, pirâmides renais, sistema calicial com cálices menores e maiores formando pelve renal), néfrons como unidades funcionais (1-1.5 milhões por rim), vascularização (artérias e veias renais com anatomia de artéria terminal), fáscias de Gerota e Zuckerkandl, relações anatômicas específicas e funções renais essenciais. Atualizado em setembro de 2025.",
+  },
+  {
+    title: "Anatomy, Abdomen and Pelvis Ureter",
+    authors: "Lescay HA, Jiang J, Leslie SW, Tuma F.",
+    journal: "StatPearls [Internet]",
+    publisher: "National Library of Medicine (NCBI) - NBK532980",
+    year: "2024",
+    url: "https://www.ncbi.nlm.nih.gov/books/NBK532980/",
+    description:
+      "Descrição anatômica detalhada do ureter como estrutura tubular bilateral (3-4 mm diâmetro, 22-30 cm comprimento) conectando rins à bexiga. Aborda três segmentos anatômicos (proximal/abdominal, distal/pélvico, intramural), constrições fisiológicas na junção ureteropélvica (JUP) e ureterovesical (JUV), trajeto retroperitoneal em 'S', relações anatômicas com nervo obturatório (explicando irradiação da dor do cólico renal), psoas, vasos gonadais ('água sob a ponte'), estrutura histológica (mucosa com epitélio transicional, muscularis com três camadas, adventícia), suprimento sanguíneo segmentar, inervação (T10-L2, S2-S4), peristalse originada nos cálices menores, e mecanismo antirrefluxo na JUV.",
+  },
+  {
+    title: "Anatomy, Abdomen and Pelvis, Retroperitoneum",
+    authors: "Lambert G, Samra NS.",
+    journal: "StatPearls [Internet]",
+    publisher: "National Library of Medicine (NCBI) - NBK549857",
+    year: "2023",
+    url: "https://www.ncbi.nlm.nih.gov/books/NBK549857/",
+    description:
+      "Revisão da anatomia do retroperitônio como espaço anatômico posterior à cavidade peritoneal. Descreve três espaços retroperitoneais principais: espaço pararrenal anterior (contendo pâncreas, cólons ascendente e descendente, duodeno exceto primeira porção), espaço perirrenal (glândulas suprarrenais, rins, ureteres, vasos renais), espaço pararrenal posterior (gordura, vasos, linfáticos), e espaço dos grandes vasos (aorta, veia cava inferior). Inclui embriologia de estruturas primariamente e secundariamente retroperitoneais, vascularização abundante, rede linfática extensa (linfonodos ilíacos, lombares, pré/para/retroaórticos e cavais), inervação (plexo lombar, sacro, simpático), musculatura (transverso abdominal, psoas, quadrado lombar, ilíaco, diafragma), e considerações cirúrgicas (manobra de Kocher, Cattell-Braasch).",
+  },
+  {
+    title: "Anatomy, Head and Neck, Zygomaticus Major Muscle",
+    authors: "Kim HS, Youn KH, Hwang K.",
+    journal: "Surgical and Radiologic Anatomy",
+    publisher: "National Library of Medicine (NCBI) - PMC",
+    year: "2018",
+    url: "https://pubmed.ncbi.nlm.nih.gov/29255938/",
+    description:
+      "Estudo anatômico detalhado do músculo zigomático maior incluindo localização precisa da origem (margem superior do processo temporal na superfície lateral do osso zigomático, ao nível ou próximo à sutura zigomaticotemporal), inserção no ângulo da boca (modíolo labial), variações anatômicas (bifurcação em aproximadamente 2% da população associada a formação de covinhas faciais), trajeto oblíquo inferomedial cruzando vasos faciais, relações com ducto parotídeo, ação como músculo primário do sorriso (tração superolateral do ângulo da boca), e relevância para procedimentos de reanimação facial e estética.",
+  },
+  {
+    title: "Anatomy and Clinical Significance of Zygomaticus Minor Muscle",
+    authors: "Pessa JE, Zadoo VP, Garza PA, et al.",
+    journal: "Plastic and Reconstructive Surgery",
+    publisher: "National Library of Medicine (NCBI)",
+    year: "1998",
+    url: "https://pubmed.ncbi.nlm.nih.gov/9810967/",
+    description:
+      "Descrição anatômica do músculo zigomático menor com origem na superfície lateral do osso zigomático imediatamente posterior à sutura zigomaticomaxilar (anterior e medial ao zigomático maior), inserção no lábio superior entrelaçando-se com elevador do lábio superior e orbicular da boca (medial à inserção do zigomático maior), com extensões para sulco nasolabial em 27,8% dos casos e ocasionalmente para região alar. Ação na elevação do lábio superior e aprofundamento do sulco nasolabial. Importância como marco anatômico para cirurgias faciais, ritidoplastia, procedimentos estéticos e reconstrução craniofacial forense.",
+  },
 ]
 
 export default function ReferencesPage() {
