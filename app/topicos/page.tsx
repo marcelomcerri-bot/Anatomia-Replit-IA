@@ -241,9 +241,135 @@ const topicsBySystemPratica = [
     topics: [
       {
         id: "musculos-membro-superior",
-        title: "Músculos do Membro Superior",
-        description: "Tórax, ombro, braço, antebraço e mão - anatomia muscular completa",
+        title: "Músculos do Membro Superior (Guia Descritivo)",
+        description: "Anatomia detalhada dos músculos do tórax, ombro, braço, antebraço e mão - Latarjet",
         icon: Dumbbell,
+        available: true,
+      },
+      {
+        id: "ossos-membro-superior",
+        title: "Ossos do Membro Superior",
+        description: "Cintura escapular, braço, antebraço e mão - estrutura óssea completa - Latarjet",
+        icon: Bone,
+        available: true,
+      },
+      {
+        id: "arterias-veias-membro-superior",
+        title: "Artérias e Veias do Membro Superior",
+        description: "Vascularização arterial e venosa completa do membro superior - Latarjet",
+        icon: Activity,
+        available: true,
+      },
+    ],
+  },
+  {
+    system: "Membro Inferior",
+    topics: [
+      {
+        id: "musculos-membro-inferior",
+        title: "Músculos do Membro Inferior (Guia Descritivo)",
+        description: "Anatomia detalhada dos músculos do quadril, coxa, perna e pé - Latarjet",
+        icon: Dumbbell,
+        available: true,
+      },
+      {
+        id: "ossos-membro-inferior",
+        title: "Ossos do Membro Inferior",
+        description: "Quadril, coxa, perna e pé - estrutura óssea completa - Latarjet",
+        icon: Bone,
+        available: true,
+      },
+      {
+        id: "arterias-veias-membro-inferior",
+        title: "Artérias e Veias do Membro Inferior",
+        description: "Vascularização arterial e venosa completa do membro inferior - Latarjet",
+        icon: Activity,
+        available: true,
+      },
+    ],
+  },
+  {
+    system: "Inervação dos Membros",
+    topics: [
+      {
+        id: "nervos-membros",
+        title: "Nervos do Membro Inferior e do Membro Superior",
+        description: "Plexos braquial e lombossacral, distribuição nervosa dos membros - Latarjet",
+        icon: Zap,
+        available: true,
+      },
+    ],
+  },
+  {
+    system: "Cabeça e Pescoço",
+    topics: [
+      {
+        id: "cranio",
+        title: "Crânio",
+        description: "Anatomia óssea do crânio, neurocrânio e viscerocrânio - Latarjet",
+        icon: Skull,
+        available: true,
+      },
+      {
+        id: "musculos-vasos-nervos-facial",
+        title: "Músculos, Vasos e Nervos da Região Facial",
+        description: "Musculatura facial, vascularização e inervação da face - Latarjet",
+        icon: User,
+        available: true,
+      },
+    ],
+  },
+  {
+    system: "Tórax, Abdome e Pelve",
+    topics: [
+      {
+        id: "parede-toracica-tgi",
+        title: "Parede Torácica e TGI",
+        description: "Anatomia da parede torácica e trato gastrointestinal - Latarjet",
+        icon: Utensils,
+        available: true,
+      },
+      {
+        id: "retroperitonio-sistema-urinario",
+        title: "Retroperitônio e Sistema Urinário",
+        description: "Espaço retroperitoneal, rins, ureteres, bexiga e uretra - Latarjet",
+        icon: Droplet,
+        available: true,
+      },
+    ],
+  },
+  {
+    system: "Sistema Cardiovascular",
+    topics: [
+      {
+        id: "coracao",
+        title: "Coração",
+        description: "Anatomia cardíaca detalhada, câmaras, valvas e vascularização - Latarjet",
+        icon: Heart,
+        available: true,
+      },
+    ],
+  },
+  {
+    system: "Sistema Respiratório",
+    topics: [
+      {
+        id: "sistema-respiratorio-regiao-cervical",
+        title: "Sistema Respiratório e Região Cervical",
+        description: "Vias aéreas, pulmões e anatomia cervical completa - Latarjet",
+        icon: Lungs,
+        available: true,
+      },
+    ],
+  },
+  {
+    system: "Sistema Articular",
+    topics: [
+      {
+        id: "articulacoes",
+        title: "Articulações",
+        description: "Anatomia detalhada das articulações do corpo humano - Latarjet",
+        icon: Activity,
         available: true,
       },
     ],
