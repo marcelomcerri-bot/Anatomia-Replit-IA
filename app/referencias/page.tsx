@@ -174,6 +174,106 @@ const scientificArticles = [
     description:
       "Revisão da anatomia cardíaca, incluindo as quatro câmaras (átrios e ventrículos), valvas cardíacas, sistema de condução elétrica (nó sinoatrial, nó atrioventricular, feixe de His) e circulação coronária.",
   },
+  {
+    title: "Anatomy, Head and Neck: Tonsils",
+    authors: "Masters KG, Lasrado S.",
+    journal: "StatPearls [Internet]",
+    publisher: "National Library of Medicine (NCBI) - NBK539792",
+    year: "2025",
+    url: "https://www.ncbi.nlm.nih.gov/books/NBK539792/",
+    description:
+      "Revisão anatômica abrangente das tonsilas do anel de Waldeyer, incluindo tonsilas linguais, palatinas, faríngea e tubárias. Detalha localização, histologia, vascularização, inervação, função imunológica e relevância clínica. Atualizado em julho de 2025.",
+  },
+  {
+    title: "Anatomy and physiology of the palatine tonsils, adenoids, and lingual tonsils",
+    authors: "Arambula A, Brown JR, Neff L.",
+    journal: "World Journal of Otorhinolaryngology - Head and Neck Surgery",
+    publisher: "National Library of Medicine (NCBI) - PMC8356106",
+    year: "2021",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8356106/",
+    description:
+      "Artigo de revisão detalhado sobre a anatomia e fisiologia das estruturas tonsilares, com ênfase especial nas tonsilas linguais. Aborda microanatomia, papel imunológico, desenvolvimento ontogenético e implicações clínico-cirúrgicas.",
+  },
+  {
+    title: "Anatomy, Abdomen and Pelvis, Stomach",
+    authors: "Valizadeh N, Liem TJ.",
+    journal: "StatPearls [Internet]",
+    publisher: "National Library of Medicine (NCBI) - NBK535425",
+    year: "2024",
+    url: "https://www.ncbi.nlm.nih.gov/books/NBK535425/",
+    description:
+      "Revisão anatômica detalhada do estômago incluindo suas regiões (cárdia, fundo, corpo, antro e canal pilórico), estrutura histológica das camadas gástricas, vascularização pela artéria gástrica esquerda e direita, e inervação pelo nervo vago.",
+  },
+  {
+    title: "Anatomy, Abdomen and Pelvis, Small Intestine",
+    authors: "Chandra T, Dodds W.",
+    journal: "StatPearls [Internet]",
+    publisher: "National Library of Medicine (NCBI) - NBK459209",
+    year: "2024",
+    url: "https://www.ncbi.nlm.nih.gov/books/NBK459209/",
+    description:
+      "Descrição anatômica completa do intestino delgado (duodeno, jejuno e íleo), incluindo características histológicas das vilosidades intestinais, vascularização pela artéria mesentérica superior, e função na absorção de nutrientes.",
+  },
+  {
+    title: "Anatomy, Abdomen and Pelvis, Large Intestine",
+    authors: "Kulkarni S, Hines J.",
+    journal: "StatPearls [Internet]",
+    publisher: "National Library of Medicine (NCBI) - NBK507857",
+    year: "2024",
+    url: "https://www.ncbi.nlm.nih.gov/books/NBK507857/",
+    description:
+      "Revisão da anatomia do intestino grosso, incluindo ceco com apêndice vermiforme, cólons ascendente, transverso, descendente e sigmóide, e reto. Detalha a estrutura das tênias cólicas, haustros, e vascularização pelas artérias mesentéricas superior e inferior.",
+  },
+  {
+    title: "Anatomy, Abdomen and Pelvis, Appendix",
+    authors: "Karabulut R, Sonmez K, Turkyilmaz Z.",
+    journal: "StatPearls [Internet]",
+    publisher: "National Library of Medicine (NCBI) - NBK459188",
+    year: "2024",
+    url: "https://www.ncbi.nlm.nih.gov/books/NBK459188/",
+    description:
+      "Descrição anatômica do apêndice vermiforme, incluindo sua origem no ceco, posicionamento variável (retrocecal mais comum), vascularização pela artéria apendicular (ramo da ileocólica), e papel imunológico como tecido linfoide.",
+  },
+  {
+    title: "Anatomy, Abdomen and Pelvis, Esophagus",
+    authors: "Sternlieb JM, Sathe M.",
+    journal: "StatPearls [Internet]",
+    publisher: "National Library of Medicine (NCBI) - NBK544251",
+    year: "2024",
+    url: "https://www.ncbi.nlm.nih.gov/books/NBK544251/",
+    description:
+      "Revisão detalhada da anatomia do esôfago em suas porções cervical, torácica e abdominal. Inclui relações com estruturas mediastinais, vascularização segmentar, inervação pelo nervo vago e plexo esofágico, e zona de transição epithelial na junção esofagogástrica.",
+  },
+  {
+    title: "Anatomy, Thorax, Diaphragm",
+    authors: "Bordoni B, Zanier E.",
+    journal: "StatPearls [Internet]",
+    publisher: "National Library of Medicine (NCBI) - NBK470172",
+    year: "2024",
+    url: "https://www.ncbi.nlm.nih.gov/books/NBK470172/",
+    description:
+      "Descrição anatômica completa do músculo diafragma, suas inserções esternais, costais e lombares (pilares), centro tendinoso, três principais aberturas (hiato esofágico em T10, hiato aórtico em T12, forame da veia cava), inervação pelo nervo frênico (C3-C5), e função na mecânica respiratória.",
+  },
+  {
+    title: "Anatomy, Abdomen and Pelvis, Abdominal Wall",
+    authors: "Hernandez JD, Moreno CC.",
+    journal: "StatPearls [Internet]",
+    publisher: "National Library of Medicine (NCBI) - NBK551649",
+    year: "2024",
+    url: "https://www.ncbi.nlm.nih.gov/books/NBK551649/",
+    description:
+      "Revisão da anatomia da parede abdominal anterolateral, incluindo os três músculos largos (oblíquo externo, oblíquo interno e transverso do abdome) e o músculo reto do abdome. Detalha a bainha dos retos, linha arqueada, canal inguinal e inervação pelos nervos intercostais e iliohipogástrico.",
+  },
+  {
+    title: "Anatomy, Head and Neck, Pharynx",
+    authors: "Lalwani AK, Snow JB.",
+    journal: "StatPearls [Internet]",
+    publisher: "National Library of Medicine (NCBI) - NBK526090",
+    year: "2024",
+    url: "https://www.ncbi.nlm.nih.gov/books/NBK526090/",
+    description:
+      "Descrição anatômica da faringe dividida em nasofaringe, orofaringe e laringofaringe. Inclui os músculos constritores (superior, médio e inferior) e elevadores da faringe, vascularização pela artéria faríngea ascendente, e inervação pelo plexo faríngeo (nervos glossofaríngeo e vago).",
+  },
 ]
 
 export default function ReferencesPage() {
