@@ -1,3 +1,9 @@
+interface Subsection {
+  title: string
+  content: string[] | string
+  subsections?: Subsection[]
+}
+
 export interface PraticaTopicContent {
   title: string
   description: string
@@ -5,10 +11,7 @@ export interface PraticaTopicContent {
     sections: Array<{
       title: string
       content: string[]
-      subsections?: Array<{
-        title: string
-        content: string[] | string
-      }>
+      subsections?: Subsection[]
       images?: string[]
     }>
   }
