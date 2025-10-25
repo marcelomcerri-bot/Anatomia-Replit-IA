@@ -62,7 +62,9 @@ export function PraticaTopicClient({ topic }: PraticaTopicClientProps) {
                   <h3 className="text-xl font-semibold text-accent">{section.title}</h3>
                   <div className="space-y-4">
                     {section.content.map((paragraph, pIndex) => (
-                      <FormattedText key={pIndex} text={paragraph} />
+                      <p key={pIndex} className="text-foreground/90 leading-relaxed">
+                        <FormattedText text={paragraph} />
+                      </p>
                     ))}
                   </div>
 
@@ -74,10 +76,14 @@ export function PraticaTopicClient({ topic }: PraticaTopicClientProps) {
                           <div className="space-y-3">
                             {Array.isArray(subsection.content) ? (
                               subsection.content.map((paragraph, pIndex) => (
-                                <FormattedText key={pIndex} text={paragraph} />
+                                <p key={pIndex} className="text-foreground/90 leading-relaxed">
+                                  <FormattedText text={paragraph} />
+                                </p>
                               ))
                             ) : (
-                              <FormattedText text={subsection.content} />
+                              <p className="text-foreground/90 leading-relaxed">
+                                <FormattedText text={subsection.content} />
+                              </p>
                             )}
                           </div>
                         </div>
